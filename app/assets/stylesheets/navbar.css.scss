@@ -1,0 +1,44 @@
+$proxima: "proxima-nova", sans-serif;
+$primary-font-color: black;
+$secondary-font-color: blue;
+$highlight-font-color: green;
+
+$nav-text: "proxima-nova", sans-serif;
+$nav-item-color: #FFFFFF;
+$link-hover-color: #E3EFF4;
+$nav-background-color: #467AA7;
+
+.navbar {
+  background-color: $nav-background-color;
+  padding: 10px 50px;
+  border-bottom: 1px solid #000;
+}
+
+.nav-title {
+  font-family: $nav-text;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.half {
+  width: 50%;
+}
+
+.nav-menu-item-container {
+  text-align: right;
+}
+
+.nav-item,
+.nav-item a,
+.nav-item a:visited {
+  font-family: $nav-text;
+  color: $nav-item-color;
+  font-size: 14px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+/*
+.nav-item a:hover {
+  color: $link-hover-color;
+}
+  */

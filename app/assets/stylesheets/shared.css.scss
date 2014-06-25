@@ -1,0 +1,67 @@
+$proxima: "proxima-nova", sans-serif;
+$primary-font-color: black;
+$secondary-font-color: blue;
+$highlight-font-color: green;
+$link-color: #467AA7;
+
+.site_container {
+  padding: 30px 50px;
+}
+
+.group {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+h1 {
+  font-family: $proxima;
+  color: $primary-font-color;
+  padding: 0px;
+  margin: 0px;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: $proxima;
+  color: $primary-font-color;
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-family: $proxima;
+  color: $primary-font-color;
+  padding: 0px;
+  margin: 0px;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $link-color;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top-color: rgb(204, 204, 204);
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(153, 153, 153);
+  display: block;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+  margin-top: 30px;
+}

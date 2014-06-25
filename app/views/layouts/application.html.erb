@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hsichanglin</title>
+    <title>Hsi-Chang Lin | Web Developer</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -10,8 +10,17 @@
   </head>
 
   <body>
+    <%= render 'navbar' %>
 
-    <%= yield %>
+    <div class="site_container">
+
+      <%= yield %>
+
+      <footer>
+        &copy; HCL2014
+      </footer>
+
+    </div>
 
   </body>
 
