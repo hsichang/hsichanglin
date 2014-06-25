@@ -84,6 +84,11 @@ GEM
       rspec (>= 2.14, < 4.0)
     haml (4.0.5)
       tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
     hike (1.2.3)
     i18n (0.6.9)
     journey (1.0.4)
@@ -203,6 +208,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.4.1)
   guard-rspec
   haml
+  haml-rails
   jquery-rails
   pg
   pry-debugger (~> 0.2.2)

@@ -5,6 +5,7 @@ gem 'rails', '3.2.17'
 gem 'pg'
 
 gem 'haml'
+gem 'haml-rails'
 
 group :development do
   gem 'better_errors', '~> 1.1.0'
