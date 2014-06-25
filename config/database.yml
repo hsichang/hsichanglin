@@ -1,0 +1,14 @@
+defaults: &defaults
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password:
+
+development:
+  database: hsichanglin_development
+  <<: *defaults
+
+test:
+  database: hsichanglin_test
+  <<: *defaults
