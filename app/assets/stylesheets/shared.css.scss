@@ -2,7 +2,11 @@ $proxima: "proxima-nova", sans-serif;
 $primary-font-color: black;
 $secondary-font-color: blue;
 $highlight-font-color: green;
+
 $link-color: #467AA7;
+
+$grey: #999999;
+$small-font-size: 18px;
 
 .site_container {
   padding: 30px 50px;
@@ -43,6 +47,10 @@ h3 {
   line-height: 30px;
 }
 
+.small {
+  font-size: $small-font-size;
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -51,6 +59,22 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+p {
+  font-family: $proxima;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.grey {
+  color: $grey;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-weight: 400;
 }
 
 footer {
