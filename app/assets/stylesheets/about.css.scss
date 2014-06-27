@@ -1,5 +1,6 @@
 $link-color: #467AA7;
 $proxima: "proxima-nova", sans-serif;
+$lato: "lato", sans-serif;
 
 @mixin about_full_cube_image($image_url) {
   background: url($image_url) top center;
@@ -16,6 +17,15 @@ $proxima: "proxima-nova", sans-serif;
   float: left;
 }
 
+@mixin about_wide_field {
+  font-family: $proxima;
+  width: 500px;
+  padding: 20px;
+  display: inline-block;
+  position: relative;
+  top: -304px;
+}
+
 @mixin about_half_field {
   font-family: $proxima;
   width: 420px;
@@ -27,6 +37,20 @@ $proxima: "proxima-nova", sans-serif;
   backface-visibility: hidden;
 }
 
+@mixin link_style {
+  color: yellow;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+@mixin about_cube_paragraph_style {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #467AA7;
+  margin-bottom: 10px;
+}
 /*
 Example usage:
 @include animation(rotate90, 10s, 1s)
@@ -81,10 +105,14 @@ body.moving #cube {
   color: $link-color;
 }
 
+.career_trigger:hover {
+  border-bottom: 2px solid $link-color;
+}
+
 .about_target_container {
   width: 920px;
   height: 300px;
-  margin: 0px auto 150px;
+  margin: 0px auto 70px;
   display: inline-block;
   -webkit-perspective: 800;
   -webkit-perspective-origin: 50% 200px;
@@ -139,31 +167,84 @@ body.moving #cube {
 .about_left_blank_black {
   @include about_half_field;
   background-color: #000000;
-  color: #FFF;
+  padding: 17px 22px 23px 18px;
   font-size: 14px;
 }
+
+  .about_left_blank_black p {
+    @include about_cube_paragraph_style;
+  }
+
+  .large_print {
+    font-family: $lato;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+
+  p.tech_cred_full_width {
+    width: 900px;
+    margin: 0 0 0 20px;
+  }
+
+  .tech_cred_print {
+    font-family: $lato;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+    color: #FFFFFF;
+  }
+    .tech_cred_print:after {
+      content: "-";
+      font-family: $lato;
+      font-size: 14px;
+      margin-right: 4px;
+      color: $link-color;
+    }
+    .tech_cred_print:last-child:after {
+      content: "";
+    }
+
+  .about_left_blank_black p a,
+  .about_left_blank_black p a:visited,
+  .about_coding_wide_overlay p a,
+  .about_coding_wide_overlay p a:visited {
+    @include link_style;
+  }
+
+  .about_left_blank_black p a:hover,
+  .about_coding_wide_overlay p a:hover {
+    text-decoration: underline;
+  }
 
 .about_coding_wide {
   @include about_full_cube_image('matrix_blue_wide.jpg');
 }
+
+.about_coding_wide_overlay {
+  @include about_wide_field;
+}
+
+  .about_coding_wide_overlay p {
+    @include about_cube_paragraph_style;
+    line-height: 1.4;
+  }
 
 .about_radio_wide {
   @include about_full_cube_image('radio_wide_full.jpg');
 }
 
 .about_music_right_overlay {
-  font-family: $proxima;
   width: 420px;
-  height: 260px;
-  padding: 20px;
+  height: 40px;
+  padding: 10px 20px 0px;
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: yellow;
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 10;
   position: relative;
   left: 460px;
-  top: -300px;
-  display: none;
+  top: -50px;
 }
 
 .about_music_wide {
@@ -181,6 +262,21 @@ body.moving #cube {
 #cube .next {
   -webkit-transform: rotateX(-90deg) translateZ(200px);
 }
+
+.summary {
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #467aa7;
+
+  display: block;
+  margin-bottom: 10px;
+}
+
+/*
+ * Animations
+ */
 
 @include keyframe(rotate-cube) {
   0% {
