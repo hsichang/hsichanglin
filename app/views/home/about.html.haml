@@ -1,15 +1,55 @@
 %h1
   About me.
-  %span.grey.subtitle The abridged version.
+  %span.grey.subtitle An unbiased, un-official auto-biography, still in progress.
+
 .about_body
   %p
-    After <span class="career_target">college</span>
-    I have spent my career
-    <span class="career_target">cooking</span>,
-    <span class="career_target">coding</span>,
-    <span class="career_target">producing music</span> and
-    <span class="career_target">public radio</span>.
+    After <span class="career_trigger" data-target="college">college</span>
+    I have spent my time
+    <span class="career_trigger" data-target="cooking">cooking</span>,
+    <span class="career_trigger" data-target="coding">coding</span>,
+    <span class="career_trigger" data-target="music">creating music</span> and in
+    <span class="career_trigger" data-target="radio">public radio</span>.
 
-  %p
-    %span.grey.small
-      Note: I apologize for the teaser above. I am coding this section in right now, so check back shortly and the full story will be told.
+.about_target_container
+  #cube.cube-state-initial
+    #main.face.open
+      .about_main_image_left
+      .about_main_image_right
+      .clear
+
+    #music.face
+      .about_left_blank_black
+        %span.summary
+          From 2000 - 2005 I was a member of the Newark, NJ based hip hop crew dälek.
+        .music_achievement
+          I released two critically acclaimed records with the crew
+        .music_achievement
+          Toured globally
+        .music_achievement
+          Released a solo turntable album
+        .music_achievement
+          Collaborated with several of my musical heroes
+      .about_music_image_right
+      .clear
+      .about_music_right_overlay
+        2004 - Collaborated with Faust.
+
+    #college.face
+      .about_main_image_left
+      .about_main_image_right
+      .clear
+
+    #coding.face
+      .about_coding_wide
+
+    #cooking.face
+      .about_main_image_left
+      .about_main_image_right
+      .clear
+
+    #radio.face
+      .about_radio_wide
+
+
+

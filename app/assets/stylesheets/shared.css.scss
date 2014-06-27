@@ -9,7 +9,9 @@ $grey: #999999;
 $small-font-size: 18px;
 
 .site_container {
-  padding: 30px 50px;
+  padding: 30px 0;
+  width: 920px;
+  margin: auto;
 }
 
 .group {
@@ -73,7 +75,7 @@ p {
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 400;
 }
 
