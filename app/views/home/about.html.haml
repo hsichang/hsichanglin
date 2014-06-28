@@ -4,12 +4,14 @@
 
 .about_body
   %p
-    After <span class="career_trigger" data-target="college">college</span>
-    I have spent my time
-    <span class="career_trigger" data-target="cooking">cooking</span>,
-    <span class="career_trigger" data-target="coding">coding</span>,
-    <span class="career_trigger" data-target="music">creating music</span> and in
-    <span class="career_trigger" data-target="radio">public radio</span>.
+    After <span class="career_trigger" data-target="college">college</span>,
+    I could be found
+    <span class="career_trigger" data-target="music">writing music</span>,
+    <span class="career_trigger" data-target="radio">producing public radio</span> or
+    <span class="career_trigger" data-target="coding">coding software</span>.
+  %p.about_title_subtitle
+    I even took a stab at
+    <span class="career_trigger" data-target="cooking">cooking</span> professionally for a stretch in there.
 
 .about_target_container
   #cube.cube-state-initial
@@ -68,7 +70,7 @@
             where I majored in Sociology and Anthropology and defended a senior thesis titled 'Technology, Self &amp; Society.'
 
           %p
-            My paper documented and analyzed an emerging musical lexicon among NYC turntablists -- musicians who repurpose turntable record players as their main means of expression.
+            My paper documented and analyzed an emerging musical lexicon among NYC turntablists -- musicians who repurpose vinyl records and record players as their sole means of expression.
 
     #coding.face
       .about_coding_wide
@@ -130,42 +132,46 @@
           online or download using the link below.
 
     #cooking.face
-      .about_main_image_left
-      .about_main_image_right
-      .clear
+      .about_cooking_wide
+        .about_cooking_half_overlay
+          %p
+            Anybody who knows me knows can glean a sense of just how much I love food.  After reading Anthony Bordain's book Kitchen Confidentials and 'Heat' by Bill Buford, I was inspired to take a stab at being a chef.  Under the tutelage of chef Daniel Parilla I was inducted into the fascinating world of cooking, working the line at
+            = link_to '5Ninth,', 'http://nymag.com/nymetro/food/reviews/restaurant/9564/', :target => '_blank'
+            an acclaimed NYC restaurant in the Meatpacking District.
 
     #radio.face
       .about_radio_wide
         .about_radio_half_overlay
           %p
-            From
+            I spent the years between
             %span.large_print
               2008
-            &dash;
+            &amp;
             %span.large_print
               2012
-            I had the honor of working at WNYC, arguably the nation's premier source of public radio programming.
+            working at
+            = link_to 'WNYC / New York Public Radio.', 'http://www.wnyc.org', :target => '_blank'
+
           %p
-            While an intern at
+            I got my foot in the door interning at
             = link_to 'RadioLab', 'http://www.radiolab.org', :target => '_blank'
-            I was able to compose music for the some of the show's promos, live events and I even produced copy for the a story in the Season 5 episode, 'Diagnosis.'
-
+            where I assisted in the production of its 5th season. Later I would composed music for the some of the show's live events.
 
           %p
-            Afterwards, I built up my newschops working as a producer for
+            I held my first staff position at
             = link_to 'The Takeaway', 'http://www.thetakeaway.org', :target => '_blank'
-            a nationally aired morning drive news program hosted by the inimitable John Hockenberry.
+            &dash; a nationally aired morning drive news program hosted by the inimitable
+            = link_to 'John Hockenberry', 'http://en.wikipedia.org/wiki/John_Hockenberry', :target => '_blank'
+            &dash; where I spent my days pitching news story ideas and interviewing political, academic and cultural figures of international renown in order to script and produce
+            = link_to 'radio segments', 'http://www.thetakeaway.org/people/hsi-chang-lin/', :target => '_blank'
+            for air on the following morning.
 
           %p
-            I learned a ton at The Takeaway.  On a daily basis I pitched national and international story ideas, interviewed political academic and cultural figures and prepared them for broadcast, and researched, scripted and edited segments for air.
+            On the days that I filled in as the show's managing producer I was responsible for four hours of editorial content, organizing stories under tight deadlines.
 
           %p
-            On the days that I filled in as the managing producer for the show, I was responsible for the editorial content of the four hour morning drive news program, organizing stories under tight deadlines.
-
-          %p
-            Along the way I filed stories for Studio 360, and even performed on the panel for the city wide music competition
-            = link_to 'Battle of the Borroughs', root_path, :target => '_blank'
-
-
-
-
+            Along the way I filed stories for
+            = link_to 'Studio 360,', 'http://www.studio360.org', :target => '_blank'
+            and sat as judge on an American Idol-esque panel at the radio station's city-wide music competetion
+            = link_to 'The Battle of the Borroughs', 'http://www.thegreenespace.org/series/battle-boroughs-2014/', :target => '_blank'
+            several times.
