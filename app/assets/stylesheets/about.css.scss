@@ -231,6 +231,22 @@ body.moving #cube {
     line-height: 1.4;
   }
 
+.about_college_wide {
+  @include about_full_cube_image('about_wide_swarthmore.jpg');
+}
+
+  .about_college_wide_overlay {
+    @include about_wide_field;
+    top: 0px;
+    left: 380px;
+    line-height: 1.3;
+  }
+
+  .about_college_wide_overlay p {
+    @include about_cube_paragraph_style;
+    color: #f0f0f0;
+  }
+
 .about_radio_wide {
   @include about_full_cube_image('radio_wide_full.jpg');
 }

@@ -51,13 +51,26 @@
           The album was recorded using turntables and vinyl sources to construct a haunting, atmospheric ambient score - a counterpoint to the heavy beats and aggressive sounds the band was known for.
       .about_music_image_right
       .clear
-      /
-        .about_music_right_overlay
 
     #college.face
-      .about_main_image_left
-      .about_main_image_right
-      .clear
+      .about_college_wide
+        .about_college_wide_overlay
+          %p
+            From
+            %span.large_print
+              1997
+            &dash;
+            %span.large_print
+              2001
+            I attended
+            %span.large_print
+              Swarthmore College
+            where I majored in Sociology and Anthropology and defended a senior thesis titled
+            %span.large_print
+              'Technology, Self &amp; Society.'
+
+          %p
+            My paper documented and explored the emerging musical lexicon developing among NYC turntablists -- musicians who repurpose turntable record players as their main means of expression.
 
     #coding.face
       .about_coding_wide
@@ -69,10 +82,7 @@
           I enrolled at
           %span.large_print
             General Assembly
-          's Web Development Immersive program.
-
-        %p
-          We studied several technologies including:
+          's Web Development Immersive program where I studied several technologies including:
 
         %p.tech_cred_full_width
           %span.tech_cred_print
@@ -103,9 +113,6 @@
             SASS
 
           %span.tech_cred_print
-            CSS3
-
-          %span.tech_cred_print
             HAML
 
           %span.tech_cred_print
@@ -118,7 +125,10 @@
             AWS
 
         %p
-          I went on to become the 1st engineer hire at a start-up called
+          I went on to become the
+          %span.large_print
+            1st engineer hire
+          at a start-up called
           = link_to 'Justworks', 'http://www.justworks.com', :target => '_blank'
           &dash; a payroll platform that allowed companies to pay their employees through an easy, online interface -- avoiding large fees from companies like ADP.
 
