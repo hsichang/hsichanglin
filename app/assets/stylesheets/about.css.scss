@@ -288,6 +288,7 @@ p.about_title_subtitle {
 .about_coding_wide_overlay {
   @include about_wide_field;
   width: 560px;
+  height: 50px;
 }
   .about_coding_wide_overlay p {
     @include about_cube_paragraph_style;
