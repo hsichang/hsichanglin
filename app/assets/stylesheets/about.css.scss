@@ -2,6 +2,16 @@ $link-color: #467AA7;
 $proxima: "proxima-nova", sans-serif;
 $lato: "lato", sans-serif;
 
+@mixin persp($pers) {
+  -webkit-perspective: $pers;
+  perspective: $pers;
+}
+
+@mixin persp-origin($x_axis, $y_axis) {
+  -webkit-perspective-origin: $x_axis $y_axis;
+  perspective-origin: $x_axis $y_axis;
+}
+
 @mixin about_full_cube_image($image_url) {
   background: url($image_url) top center;
   background-color: #000000;
@@ -96,6 +106,9 @@ Example usage:
   }
 }
 
+body #cube {
+  transition-duration: 0s;
+}
 
 body.moving #cube {
   @include animation(rotate-cube, 1.1s, .5s);
@@ -131,9 +144,10 @@ p.about_title_subtitle {
   height: 300px;
   margin: 0px auto 70px;
   display: inline-block;
-  -webkit-perspective: 800;
-  -webkit-perspective-origin: 50% 200px;
+  @include persp(800px);
+  @include persp-origin(50%, 200px);
 }
+
 
 #cube {
   position: relative;
@@ -142,9 +156,14 @@ p.about_title_subtitle {
   width: 960px;
   -webkit-transition: -webkit-transform 1s linear;
   -webkit-transform-style: preserve-3d;
+
+  transition: transform 1s linear;
+  transform-style: preserve-3d;
 }
 
 .cube-state-initial {
+  transform: translateZ(-100px) translateY(40px);
+  -ms-transform: translateZ(-100px) translateY(40px);
   -webkit-transform: translateZ(-100px) translateY(40px);
 }
 
@@ -345,10 +364,14 @@ p.about_title_subtitle {
 }
 
 #cube .open  {
+  transform: translateZ(100px);
+  -ms-transform: translateZ(100px);
   -webkit-transform: translateZ(100px);
 }
 
 #cube .next {
+  transform: rotateX(-90deg) translateZ(200px);
+  -ms-transform: rotateX(-90deg) translateZ(200px);
   -webkit-transform: rotateX(-90deg) translateZ(200px);
 }
 
@@ -369,10 +392,14 @@ p.about_title_subtitle {
 
 @include keyframe(rotate-cube) {
   0% {
+    transform: translateZ(-100px) translateY(40px);
+    -ms-transform: translateZ(-100px) translateY(40px);
     -webkit-transform: translateZ(-100px) translateY(40px);
   }
 
   100% {
+    transform: translateZ(-150px) translateY(-10px) rotateX(90deg);
+    -ms-transform: translateZ(-150px) translateY(-10px) rotateX(90deg);
     -webkit-transform: translateZ(-150px) translateY(-10px) rotateX(90deg);
   }
 }

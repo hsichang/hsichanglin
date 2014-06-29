@@ -24,15 +24,10 @@ $(document).ready(function() {
       setTimeout(self._replaceCurrentCubeFace, 1600);
     },
 
-
     _replaceCurrentCubeFace: function() {
       $('body').toggleClass('moving');
       $('.face.open').toggleClass('open');
       $('.face.next').toggleClass('next open');
-    },
-
-    _replaceCurrent: function() {
-
     },
 
   };
