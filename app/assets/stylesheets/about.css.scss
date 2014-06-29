@@ -4,6 +4,7 @@ $lato: "lato", sans-serif;
 
 @mixin about_full_cube_image($image_url) {
   background: url($image_url) top center;
+  background-color: #000000;
   width: 920px;
   height: 300px;
   display: inline-block;
@@ -11,6 +12,7 @@ $lato: "lato", sans-serif;
 
 @mixin about_half_main_image($image_url) {
   background: url($image_url) top center;
+  background-color: #000000;
   width: 460px;
   height: 300px;
   display: inline-block;
@@ -39,7 +41,7 @@ $lato: "lato", sans-serif;
 
 @mixin link_style {
   color: yellow;
-  font-weight: 200;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -47,8 +49,7 @@ $lato: "lato", sans-serif;
   font-family: $lato;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.2;
-  color: #467AA7;
+  color: #FAFAFA;
   margin-bottom: 10px;
 }
 /*
@@ -104,11 +105,15 @@ body.moving #cube {
   font-weight: 200;
 }
 
-p.about_title_subtitle {
-  margin-top: -6px;
-  font-style: italic;
-  color: #999999;
+p.about_title_subheading {
   font-weight: 200;
+  font-size: 23px;
+}
+
+p.about_title_subtitle {
+  margin-top: -2px;
+  color: #999999;
+  font-weight: 100;
 }
 
 .career_trigger {
@@ -159,6 +164,22 @@ p.about_title_subtitle {
   display: inline-block;
 }
 
+  #music.face {
+    background-color: #000;
+  }
+  #main.face {
+    background-color: #FFF;
+  }
+  #college.face {
+    background-color: #467BA7;
+  }
+  #coding.face {
+    background-color: #000;
+  }
+  #cooking.face {
+    background-color: #491001;
+  }
+
 .about_main_image_left {
   @include about_half_main_image('about_main_image_left.jpg');
 }
@@ -178,9 +199,19 @@ p.about_title_subtitle {
   font-size: 14px;
 }
 
-  .about_left_blank_black p {
-    @include about_cube_paragraph_style;
+  .about_music_overlay {
+    height: 260px;
+    width: 550px;
+    padding: 20px;
+    position: relative;
+    top: -21px;
+    left: -20px;
   }
+    .about_music_overlay p {
+      @include about_cube_paragraph_style;
+      color: #FAFAFA;
+      line-height: 1.5;
+    }
 
   .large_print {
     font-family: $lato;
@@ -193,7 +224,6 @@ p.about_title_subtitle {
 
   p.tech_cred_full_width {
     width: 900px;
-    margin: 0 0 0 20px;
   }
 
   .tech_cred_print {
@@ -204,10 +234,9 @@ p.about_title_subtitle {
     color: #FFFFFF;
   }
     .tech_cred_print:after {
-      content: "-";
+      content: " -";
       font-family: $lato;
       font-size: 14px;
-      margin-right: 4px;
       color: $link-color;
     }
     .tech_cred_print:last-child:after {
@@ -234,18 +263,26 @@ p.about_title_subtitle {
 
 .about_coding_wide {
   @include about_full_cube_image('matrix_blue_wide.jpg');
+  background-color: #000;
 }
 
 .about_coding_wide_overlay {
   @include about_wide_field;
+  width: 560px;
 }
   .about_coding_wide_overlay p {
     @include about_cube_paragraph_style;
-    line-height: 1.4;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    color: #FAFAFA;
+  }
+  .about_coding_wide_overlay p.last {
+    margin-bottom: -20px;
   }
 
 .about_college_wide {
   @include about_full_cube_image('about_wide_swarthmore.jpg');
+  background-color: #000000;
 }
 
   .about_college_wide_overlay {
@@ -256,10 +293,9 @@ p.about_title_subtitle {
 
   .about_college_wide_overlay p {
     @include about_cube_paragraph_style;
-    font-weight: 200;
-    color: #f0f0f0;
-    line-height: 1.4;
-    margin-bottom: 14px;
+    color: #F0F0F0;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
 .about_radio_wide {
@@ -268,6 +304,7 @@ p.about_title_subtitle {
 
 .about_cooking_wide {
   @include about_full_cube_image('about_cooking_wide.png');
+  background-color: #491001;
 }
 
 .about_cooking_half_overlay {
@@ -283,7 +320,7 @@ p.about_title_subtitle {
   .about_cooking_half_overlay p {
     @include about_cube_paragraph_style;
     color: #FAFAFA;
-    font-weight: 200;
+    margin-bottom: 14px;
     line-height: 1.6;
   }
 
@@ -349,6 +386,6 @@ p.about_title_subtitle {
   .about_radio_half_overlay p {
     @include about_cube_paragraph_style;
     color: #FAFAFA;
-    font-weight: 200;
+    margin-bottom: 12px;
     line-height: 1.4;
   }

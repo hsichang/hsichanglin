@@ -1,17 +1,17 @@
 %h1
   About me.
-  %span.grey.subtitle An unbiased, un-official auto-biography perpetually in progress
+  %span.grey.subtitle An unbiased, un-official auto-biography perpetually in progress.
 
 .about_body
-  %p
-    After <span class="career_trigger" data-target="college">college</span>,
-    I could be found
-    <span class="career_trigger" data-target="music">writing music</span>,
-    <span class="career_trigger" data-target="radio">producing public radio</span> or
-    <span class="career_trigger" data-target="coding">coding software</span>.
+  %p.about_title_subheading
+    After <span class="career_trigger" data-target="college">college</span>
+    I
+    <span class="career_trigger" data-target="music">wrote and performed music</span>,
+    <span class="career_trigger" data-target="radio">produced public radio</span> and
+    <span class="career_trigger" data-target="coding">developed software</span>.
   %p.about_title_subtitle
-    I even took a stab at
-    <span class="career_trigger" data-target="cooking">cooking</span> professionally for a stretch in there.
+    \. . . I also took a swift stab at
+    <span class="career_trigger" data-target="cooking">cooking professionally</span>.
 
 .about_target_container
   #cube.cube-state-initial
@@ -22,35 +22,39 @@
 
     #music.face
       .about_left_blank_black
-        %p
-          Between
-          %span.large_print
-            2000
-          &amp;
-          %span.large_print
-            2005
-          I was a member of the Newark, NJ based hip-hop crew dälek.
+        .about_music_overlay
+          %p
+            Between
+            %span.large_print
+              2000
+            &amp;
+            %span.large_print
+              2005
+            I was a member of the Newark, NJ based hip-hop crew dälek.
 
-        %p
-          While signed to Mike Patton's
-          = link_to 'Ipecac', 'http://www.ipecac.com', :target => '_blank'
-          record label, I released two critically
-          = link_to 'critically', 'http://pitchfork.com/reviews/albums/2148-from-filthy-tongue-of-gods-and-griots/', :target => '_blank'
+          %p
+            While signed to Mike Patton's
+            = link_to 'Ipecac', 'http://www.ipecac.com', :target => '_blank'
+            record label, I released two
+            = link_to 'critically', 'http://pitchfork.com/reviews/albums/2148-from-filthy-tongue-of-gods-and-griots/', :target => '_blank'
 
-          = link_to 'acclaimed', 'http://pitchfork.com/reviews/albums/2149-absence/', :target => '_blank'
-          LPs and a number of
-          = link_to 'collaborative EPs', 'http://www.discogs.com/D%C3%A4lek-vs-Velma-D%C3%A4lek-Vs-Velma/release/1259196', :target => '_blank'
-          with artists from around the world.
+            = link_to 'acclaimed', 'http://pitchfork.com/reviews/albums/2149-absence/', :target => '_blank'
+            LPs and a number of
+            = link_to 'collaborative EPs', 'http://www.discogs.com/D%C3%A4lek-vs-Velma-D%C3%A4lek-Vs-Velma/release/1259196', :target => '_blank'
+            with artists from around the world.
 
-        %p
-          We toured globally and we toured heavily, performing alongside some of my musical heroes; but our biggest honor and accomplishment has to be the collaborative record we recorded with
-          = link_to 'Faust', 'http://pitchfork.com/reviews/albums/3019-derbe-respect-alder-with-dalek/', :target => '_blank'
-          &dash; the German musical pioneers who helped establish what is now known as the 'Krautrock' sound.
+          %p
+            We toured globally and we toured heavily, performing alongside many of my musical heroes; that said, our biggest honor and accomplishment had to be our collaboration with
+            = link_to 'Faust', 'http://pitchfork.com/reviews/albums/3019-derbe-respect-alder-with-dalek/', :target => '_blank'
+            &dash; the German musical pioneers who helped establish what is now known as the 'Krautrock' sound.
 
-        %p
-          Somewhere along the line I also released a solo effort titled
-          = link_to 'Remains.', 'http://www.collide-scope.com/still-remains/', :target => '_blank'
-          The album was recorded using turntables and vinyl sources to construct a haunting, atmospheric ambient score - a counterpoint to the heavy beats and aggressive sounds the band was known for.
+          %p
+            In
+            %span.large_print
+              2005,
+            I released
+            = link_to 'Remains,', 'http://www.collide-scope.com/still-remains/', :target => '_blank'
+            my solo album recorded using turntables and vinyl record sources to construct a haunting, atmospheric ambient score - a counterpoint to the heavy beats and aggressive sounds the band was known for.
       .about_music_image_right
       .clear
 
@@ -67,10 +71,10 @@
             I attended
             %span.large_print
               Swarthmore College
-            where I majored in Sociology and Anthropology and defended a senior thesis titled 'Technology, Self &amp; Society.'
+            where I majored in Sociology and Anthropology and wrote a senior thesis titled 'Technology, Self &amp; Society.'
 
           %p
-            My paper documented and analyzed an emerging musical lexicon among NYC turntablists -- musicians who repurpose vinyl records and record players as their sole means of expression.
+            My paper documented and analyzed an emerging musical lexicon among turntablists -- musicians who repurpose vinyl records and record players as their sole means of expression.
 
     #coding.face
       .about_coding_wide
@@ -122,22 +126,41 @@
             AWS
 
         %p
-          I went on to become the 1st engineer hire at a start-up called
+          In
+          %span.large_print
+            2013
+          I became the 1st engineer hire at a start-up called
           = link_to 'Justworks', 'http://www.justworks.com', :target => '_blank'
-          &dash; a payroll platform that allowed companies to pay their employees through an easy, online interface -- avoiding large fees from companies like ADP.
+          where I helped develop an automated payroll platform solution for small businesses - a one stop, self-serve site that manages payroll, contractor payments, benefits and more.
 
-        %p
-          You can see my
+        %p.last
+          I will use this site to showcase some personal projects on my
+          = link_to 'Github,', 'http://www.github.com/hsichang', :target => '_blank'
+          but until then you should feel free to look at or download my
           = link_to 'resume', resume_path
-          online or download using the link below.
+          for more information.
 
     #cooking.face
       .about_cooking_wide
         .about_cooking_half_overlay
           %p
-            Anybody who knows me knows can glean a sense of just how much I love food.  After reading Anthony Bordain's book Kitchen Confidentials and 'Heat' by Bill Buford, I was inspired to take a stab at being a chef.  Under the tutelage of chef Daniel Parilla I was inducted into the fascinating world of cooking, working the line at
+            Anyone who knows me can attest to my passion for food.
+          %p
+            After reading Anthony Bordain's
+            = link_to "'Kitchen Confidential'", 'http://www.amazon.com/Kitchen-Confidential-Anthony-Bourdain/dp/1408845040/ref=sr_1_3?s=books&ie=UTF8&qid=1404002819&sr=1-3&keywords=kitchen+confidential+by+anthony+bourdain', :target => '_blank'
+            and
+            = link_to "'Heat'", 'http://www.amazon.com/Heat-Adventures-Pasta-Maker-Apprentice-Dante-Quoting/dp/1400034477/ref=sr_1_1?s=books&ie=UTF8&qid=1404002756&sr=1-1&keywords=heat+bill+buford', :target => '_blank'
+            by Bill Buford, I was inspired to take a stab at being a chef myself.
+          %p
+            From
+            %span.large_print
+              2006
+            until
+            %span.large_print
+              2008
+            &dash; under the tutelage of chef Daniel Parilla &dash; I was inducted into the fascinating world of cooking by working the line at
             = link_to '5Ninth,', 'http://nymag.com/nymetro/food/reviews/restaurant/9564/', :target => '_blank'
-            an acclaimed NYC restaurant in the Meatpacking District.
+            a distinguished restaurant in New York City's Meatpacking District.
 
     #radio.face
       .about_radio_wide
@@ -155,7 +178,7 @@
           %p
             I got my foot in the door interning at
             = link_to 'RadioLab', 'http://www.radiolab.org', :target => '_blank'
-            where I assisted in the production of its 5th season. Later I would composed music for the some of the show's live events.
+            where I assisted in the production of its 5th season. Later, I would compose music for some of the show's live events.
 
           %p
             I held my first staff position at
@@ -164,7 +187,7 @@
             = link_to 'John Hockenberry', 'http://en.wikipedia.org/wiki/John_Hockenberry', :target => '_blank'
             &dash; where I spent my days pitching news story ideas and interviewing political, academic and cultural figures of international renown in order to script and produce
             = link_to 'radio segments', 'http://www.thetakeaway.org/people/hsi-chang-lin/', :target => '_blank'
-            for air on the following morning.
+            for air the following morning.
 
           %p
             On the days that I filled in as the show's managing producer I was responsible for four hours of editorial content, organizing stories under tight deadlines.
@@ -172,6 +195,6 @@
           %p
             Along the way I filed stories for
             = link_to 'Studio 360,', 'http://www.studio360.org', :target => '_blank'
-            and sat as judge on an American Idol-esque panel at the radio station's city-wide music competetion
+            and sat as judge on an American Idol-esque panel for the radio station's city-wide music competetion
             = link_to 'The Battle of the Borroughs', 'http://www.thegreenespace.org/series/battle-boroughs-2014/', :target => '_blank'
-            several times.
+            on several occasions.
