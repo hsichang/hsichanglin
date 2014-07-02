@@ -1,6 +1,7 @@
 $link-color: #467AA7;
 $proxima: "proxima-nova", sans-serif;
 $lato: "lato", sans-serif;
+$trigger-color: #0788DF;
 
 @mixin persp($pers) {
   -webkit-perspective: $pers;
@@ -139,12 +140,12 @@ p.about_title_subtitle {
 
 .career_trigger {
   cursor: pointer;
-  color: #0788DF;
+  color: $trigger-color;
   font-weight: 400;
 }
 
 .career_trigger:hover {
-  border-bottom: 2px solid $link-color;
+  border-bottom: 2px solid $trigger-color;
 }
 
 .about_target_container {
