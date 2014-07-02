@@ -111,7 +111,7 @@ body #cube {
 }
 
 body.moving #cube {
-  @include animation(rotate-cube, 0.65s, 0s);
+  @include animation(rotate-cube, 0.75s, 0s);
 }
 
 .about_body p {
