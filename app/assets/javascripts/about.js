@@ -21,7 +21,7 @@ $(document).ready(function() {
       var self = this;
 
       $('body').toggleClass('moving');
-      setTimeout(self._replaceCurrentCubeFace, 1600);
+      setTimeout(self._replaceCurrentCubeFace, 700);
     },
 
     _replaceCurrentCubeFace: function() {
