@@ -114,6 +114,14 @@ body.moving #cube {
   @include animation(rotate-cube, 0.75s, 0s);
 }
 
+.about_body {
+  margin-top: 20px;
+}
+
+p.about_subtitle_graph {
+  margin-bottom: -10px;
+}
+
 .about_body p {
   font-weight: 200;
 }
@@ -121,17 +129,17 @@ body.moving #cube {
 p.about_title_subheading {
   font-weight: 200;
   font-size: 23px;
+  color: #999999;
 }
 
 p.about_title_subtitle {
-  margin-top: -2px;
   color: #999999;
   font-weight: 100;
 }
 
 .career_trigger {
   cursor: pointer;
-  color: $link-color;
+  color: #0788DF;
   font-weight: 400;
 }
 
