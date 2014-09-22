@@ -16,7 +16,7 @@ group :development, :test do
   gem 'annotate', '~> 2.6.3'
   gem 'rails-footnotes', '~> 4.0.1'
   gem 'pry-rails', '~> 0.3.2'
-  gem 'pry-debugger', '~> 0.2.2'
+  gem 'byebug'
   gem 'factory_girl_rails', '~> 4.4.1'
   gem 'rspec-rails'
 end
