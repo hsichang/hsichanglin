@@ -1,0 +1,94 @@
+.floor-btn-display {
+  background-color: black;
+  color: #FAFAFA;
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #DECDB8;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.floor-btn-container {
+  float: left; 
+}
+
+.elevator-btn-panel {
+  width: 300px;
+  height: 420px;
+  padding: 40px 0px 20px 50px;
+  background-color: #AFAFAF;
+  border-radius: 10px;
+}
+
+.floor-btn {
+  border-radius: 30px;
+  border: 2px solid #000;
+  background-color: #FFF;
+  color: #000;
+  font-size: 30px;
+  height: 42px;
+  width: 45px;
+  font-family: serif;
+  text-align: center;
+  display: inline-block;
+  margin: 0 40px 0 0;
+  padding: 3px 0 0 0;
+}
+
+.floor-btn:hover {
+  background: #FFFFFF;
+  text-decoration: none;
+}
+
+.floor-btn.active {
+  background: #FEEDBB;
+  text-decoration: none;
+}
+
+.left-container {
+  width: 400px;
+  float: left;
+}
+
+.right-container {
+  width: 260px;
+  float: left;
+}
+
+.page-container {
+  width: 660px;
+  margin: 45px auto;
+}
+
+.clear {
+  clear: both;
+}
+
+.floor {
+  width: 250px;
+  height:  48px;
+  margin: 0 0 5px 0;
+  background-color: #41414A;
+  border: 1px solid #000;
+
+  color: #FAFAFA;
+  font-size: 30px;
+  font-family: helvetica, arial, sans-serif;
+  letter-spacing: 1px;
+
+  text-align: center;
+  padding: 12px 0 0 0;
+
+}
+
+.floor.active {
+  background-color: red;
+}
+
+.row {
+  margin: 0 0 30px 0;
+}
