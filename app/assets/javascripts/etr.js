@@ -39,8 +39,8 @@ $(document).ready(function() {
         if ((self.queue.indexOf(floor) === -1) && (floor !== self.position.currentFloor)) {
           $('*[data-btn='+floor+']').toggleClass('active');          
           self._sortAndInsertFloor(floor);
-          if (!self.position.inMotion) { self._moveBetweenFloors() };
-        };
+          if (!self.position.inMotion) { self._moveBetweenFloors(); }
+        }
       });
     },
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
       if (!self.position.inMotion && self.position.currentDirection === 0) {
         self._determineDirection(floor);
-      };
+      }
       if  ( (self.position.currentDirection === self.DIR_UP) && (self.position.currentFloor < floor) ) { 
         self.queue.push(floor);
         self.queue.sort(self._sortUp);
@@ -66,20 +66,20 @@ $(document).ready(function() {
         self.queue.sort(self._sortDown);
       } else if ( (self.position.currentDirection === self.DIR_DOWN) && (self.position.currentFloor < floor) ) {
         self.queueNext.push(floor);
-        self.queueNext.sort(self._sortUp)
-      };
+        self.queueNext.sort(self._sortUp);
+      }
     },
 
     _sortUp : function(a,b) {
-      if (a < b) { return -1 };
-      if (a > b) { return 1 };
-      if (a == b) { return 0 };       
+      if (a < b) { return -1; }
+      if (a > b) { return 1; }
+      if (a == b) { return 0; }       
     },
 
     _sortDown : function(a, b) {
-      if (a < b) { return 1 };
-      if (a > b) { return -1 };
-      if (a == b) { return 0 };     
+      if (a < b) { return 1; }
+      if (a > b) { return -1; }
+      if (a == b) { return 0; }     
     },
 
     _moveBetweenFloors : function() {
@@ -129,9 +129,9 @@ $(document).ready(function() {
               self.queue.push(1); 
               self.position.currentDirection = self.DIR_DOWN;
               self._moveBetweenFloors();
-            },self.DELAY_TIME_RETURN_TO_LOBBY)
-          };
-        };
+            },self.DELAY_TIME_RETURN_TO_LOBBY);
+          }
+        }
       }, self.DELAY_TIME_PAUSE_AT_FLOOR);
     },
   };

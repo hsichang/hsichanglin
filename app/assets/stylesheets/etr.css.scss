@@ -1,3 +1,7 @@
+body {
+  background-color: #EBF3FF;
+}
+
 .floor-btn-display {
   background-color: black;
   color: #FAFAFA;
@@ -37,6 +41,7 @@
   display: inline-block;
   margin: 0 40px 0 0;
   padding: 3px 0 0 0;
+  cursor: pointer;
 }
 
 .floor-btn:hover {
@@ -61,7 +66,7 @@
 
 .page-container {
   width: 660px;
-  margin: 45px auto;
+  margin: 80px auto 50px auto;
 }
 
 .clear {
